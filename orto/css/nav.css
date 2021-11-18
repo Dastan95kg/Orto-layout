@@ -1,0 +1,120 @@
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #E5E5E5;
+}
+
+.nav__item {
+    padding: 18px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-transform: uppercase;
+    transition: .2s linear color;
+}
+
+.nav__item:hover {
+    color: #FF7A00;
+    background: #fff;
+}
+
+.nav__modal {
+    display: none;
+}
+
+.nav__modal.open {
+    width: 90%;
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+    padding: 29px 20px;
+}
+
+.nav__modal-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.nav__modal-item+.nav__modal-item {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.nav__modal-item:nth-child(1) {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.nav__modal-item {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.nav__modal-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.nav__modal-card {
+    display: flex;
+}
+
+.nav__modal-card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 12px;
+}
+
+.nav__modal-card .content__category {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.nav__modal-card .content__subcategory {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.content__subcategory+.content__subcategory {
+    margin-top: 10px;
+}
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+    .nav__modal {
+        width: 90%;
+    }
+    .nav__modal-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .nav {
+        display: none;
+    }
+}

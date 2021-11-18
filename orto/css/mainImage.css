@@ -1,0 +1,32 @@
+/* MainImage */
+
+.mainImage {
+    height: 470px;
+    background: url('../assets/mainImage.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.mainImage.products {
+    background: url('../assets/mainImage-products.png') no-repeat center;
+}
+
+.mainImage.news {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/news.png') no-repeat center;
+}
+
+/* Media Query */
+
+@media (max-width: 500px) {
+    .mainImage {
+        font-size: 30px;
+        line-height: 36px;
+        height: 360px;
+    }
+}

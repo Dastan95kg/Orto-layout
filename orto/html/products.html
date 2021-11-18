@@ -1,0 +1,752 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/contacts.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/mainImage.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/pagination.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="productsPage">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <button class="header__burger" id="burger">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </button>
+
+            <a class="header__logo" href="./main.html">
+              <img src="../assets/photo_2021-11-05_22-17-32 1.png" />
+            </a>
+
+            <div class="header__content">
+              <div class="header__search">
+                <input placeholder="Поиск" />
+              </div>
+
+              <div class="header__info">
+                <div class="header__phoneNumbers">
+                  <div class="header__phoneNumbers-item">+996 999 999 999,</div>
+                  <div class="header__phoneNumbers-item">+996 777 777 777</div>
+                </div>
+                <button class="header__location">
+                  <svg
+                    width="19"
+                    height="25"
+                    viewBox="0 0 19 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.1154 8.67496C17.989 4.68987 15.0151 1.09447 11.1262 0.238625C10.6483 0.133186 10.1594 0.0783083 9.67534 0C9.27516 0 8.87561 0 8.47543 0C7.9692 0.0844744 7.45188 0.127637 6.95859 0.260823C3.58517 1.16846 1.33642 3.29388 0.371443 6.65559C-0.42274 9.4229 0.0643766 12.0453 1.75818 14.3748C3.96993 17.4159 6.24457 20.4107 8.4927 23.4259L8.62403 23.6195C8.63575 23.6393 8.64746 23.659 8.6598 23.6781C8.66103 23.6781 8.66226 23.6781 8.66411 23.6781L9.06059 24.262L9.48974 23.6781C9.49036 23.6781 9.49036 23.6781 9.49097 23.6781C9.53907 23.6121 9.58778 23.5455 9.63588 23.4796L9.67657 23.4247C10.0132 22.9628 10.3493 22.501 10.6903 22.0423C12.5567 19.537 14.4262 17.0348 16.2921 14.5302C17.5851 12.7926 18.1838 10.838 18.1154 8.67496ZM9.05195 12.0694C7.41056 12.0607 6.0713 10.703 6.07562 9.05171C6.07994 7.39551 7.43893 6.04947 9.09882 6.05811C10.7408 6.06674 12.0801 7.42388 12.0752 9.07514C12.0708 10.7313 10.7118 12.078 9.05195 12.0694Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+
+                <button class="header__searchIcon">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.80753 0C3.95119 0 0 3.95119 0 8.80753C0 13.6641 3.95119 17.6151 8.80753 17.6151C13.6641 17.6151 17.6151 13.6641 17.6151 8.80753C17.6151 3.95119 13.6641 0 8.80753 0ZM8.80753 15.9891C4.84767 15.9891 1.62601 12.7674 1.62601 8.80757C1.62601 4.84771 4.84767 1.62601 8.80753 1.62601C12.7674 1.62601 15.989 4.84767 15.989 8.80753C15.989 12.7674 12.7674 15.9891 8.80753 15.9891Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M19.7619 18.6123L15.1007 13.9511C14.7831 13.6335 14.2687 13.6335 13.9511 13.9511C13.6335 14.2684 13.6335 14.7834 13.9511 15.1007L18.6123 19.7619C18.7711 19.9207 18.979 20.0001 19.1871 20.0001C19.395 20.0001 19.6031 19.9207 19.7619 19.7619C20.0795 19.4446 20.0795 18.9297 19.7619 18.6123Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+
+                <div class="header__time-wrapper">
+                  <div class="header__time">
+                    10:00 - 21:00 без выходных и без перерывов
+                  </div>
+                  <div class="header__contacts">
+                    +996 999 999 999, +996 777 777 777
+                  </div>
+                </div>
+
+                <div class="header__branch">
+                  <div class="header__location">
+                    <svg
+                      width="19"
+                      height="25"
+                      viewBox="0 0 19 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.1154 8.67496C17.989 4.68987 15.0151 1.09447 11.1262 0.238625C10.6483 0.133186 10.1594 0.0783083 9.67534 0C9.27516 0 8.87561 0 8.47543 0C7.9692 0.0844744 7.45188 0.127637 6.95859 0.260823C3.58517 1.16846 1.33642 3.29388 0.371443 6.65559C-0.42274 9.4229 0.0643766 12.0453 1.75818 14.3748C3.96993 17.4159 6.24457 20.4107 8.4927 23.4259L8.62403 23.6195C8.63575 23.6393 8.64746 23.659 8.6598 23.6781C8.66103 23.6781 8.66226 23.6781 8.66411 23.6781L9.06059 24.262L9.48974 23.6781C9.49036 23.6781 9.49036 23.6781 9.49097 23.6781C9.53907 23.6121 9.58778 23.5455 9.63588 23.4796L9.67657 23.4247C10.0132 22.9628 10.3493 22.501 10.6903 22.0423C12.5567 19.537 14.4262 17.0348 16.2921 14.5302C17.5851 12.7926 18.1838 10.838 18.1154 8.67496ZM9.05195 12.0694C7.41056 12.0607 6.0713 10.703 6.07562 9.05171C6.07994 7.39551 7.43893 6.04947 9.09882 6.05811C10.7408 6.06674 12.0801 7.42388 12.0752 9.07514C12.0708 10.7313 10.7118 12.078 9.05195 12.0694Z"
+                        fill="orange"
+                      />
+                    </svg>
+                  </div>
+
+                  <div>
+                    <div class="header__branch-item">
+                      Филиал 1: название улицы 12,
+                    </div>
+                    <div class="header__branch-item">
+                      Филиал 2: название улицы 12,
+                    </div>
+                    <div class="header__branch-item">
+                      Филиал 3: название улицы 12,
+                    </div>
+                    <div class="header__branch-item">
+                      Филиал 4: название улицы 12,
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__modal" id="headerModal">
+          <div class="header__modal-top">
+            <div class="header__modal-left">
+              <button class="header__modal-burger" id="openBurger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+
+              <a class="header__modal-logo" href="./main.html">
+                <img
+                  src="../assets/photo_2021-11-05_22-17-32 1.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+
+            <button class="header__modal-location" id="modalLocation">
+              <svg
+                width="15"
+                height="20"
+                viewBox="0 0 15 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.9956 7.15106C14.891 3.86602 12.4293 0.902206 9.21011 0.196707C8.81454 0.10979 8.40978 0.0645522 8.0091 0C7.67785 0 7.3471 0 7.01584 0C6.59679 0.0696351 6.16855 0.105216 5.76022 0.215005C2.96775 0.963201 1.10627 2.71526 0.307475 5.48643C-0.349938 7.76761 0.05329 9.92935 1.4554 11.8497C3.28625 14.3565 5.16916 16.8253 7.03013 19.3108L7.13885 19.4704C7.14855 19.4866 7.15825 19.5029 7.16845 19.5187C7.16948 19.5187 7.1705 19.5187 7.17203 19.5187L7.50022 20L7.85547 19.5187C7.85598 19.5187 7.85598 19.5187 7.85649 19.5187C7.8963 19.4643 7.93663 19.4094 7.97644 19.355L8.01013 19.3097C8.28881 18.929 8.56699 18.5483 8.84925 18.1702C10.3943 16.105 11.9418 14.0424 13.4864 11.9777C14.5567 10.5454 15.0523 8.93413 14.9956 7.15106ZM7.49308 9.94917C6.13436 9.94206 5.02574 8.82281 5.02931 7.46162C5.03288 6.09637 6.15784 4.98679 7.53187 4.9939C8.8911 5.00102 9.99972 6.11975 9.99564 7.48094C9.99206 8.84619 8.86711 9.95629 7.49308 9.94917Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="header__modal-content">
+            <div class="header__modal-item">
+              <div class="header__modal-itemWrapper">
+                <a class="header__modal-title">Категории</a>
+                <button class="header__modal-plus" id="plus">+</button>
+                <button class="header__modal-minus" id="minus">-</button>
+              </div>
+              <div class="header__modal-extras" id="extras">
+                <div class="header__modal-extra">Ортопедические изделия</div>
+                <div class="header__modal-extra">Ортопедические подушки</div>
+                <div class="header__modal-extra">Домашняя обувь</div>
+                <div class="header__modal-extra">Детские Дутики</div>
+                <div class="header__modal-extra">Стельки</div>
+                <div class="header__modal-extra">Послеоперационное Белье</div>
+              </div>
+            </div>
+
+            <div class="header__modal-item">
+              <a class="header__modal-title">Контакты</a>
+            </div>
+
+            <div class="header__modal-item">
+              <a class="header__modal-title">Новости</a>
+            </div>
+
+            <div class="header__modal-item">
+              <a class="header__modal-title">Товары</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="nav">
+        <button class="nav__item category">Категории</button>
+        <button class="nav__item" id="contacts">Контакты</button>
+        <button class="nav__item" id="news">Новости</button>
+        <button class="nav__item" id="products">Товары</button>
+
+        <div class="nav__modal">
+          <div class="nav__modal-header">
+            <button class="nav__modal-item">Ортопедические изделия</button>
+            <button class="nav__modal-item">Ортопедические подушки</button>
+            <button class="nav__modal-item">Домашняя обувь</button>
+            <button class="nav__modal-item">Детские бутики</button>
+            <button class="nav__modal-item">Стельки</button>
+            <button class="nav__modal-item">Послеоперациион</button>
+            <button class="nav__modal-more">
+              <svg
+                width="10"
+                height="17"
+                viewBox="0 0 10 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.54662 9.3001L2.11343 16.7332C1.94151 16.9052 1.71201 17 1.4673 17C1.22259 17 0.993093 16.9052 0.821172 16.7332L0.273769 16.1859C-0.0824294 
+  
+  15.8293 -0.0824294 15.2497 0.273769 14.8936L6.5156 8.6518L0.266844 2.40305C0.094923 2.23099 0 2.00163 0 1.75705C0 1.51221 0.094923 1.28285 0.266844 1.11065L0.814246 
+  
+  0.563522C0.986303 0.391466 1.21567 0.29668 1.46037 0.29668C1.70508 0.29668 1.93458 0.391466 2.1065 0.563522L9.54662 8.00337C9.71895 8.17597 9.8136 8.40641 9.81305 
+  
+  8.6514C9.8136 8.89733 9.71895 9.12764 9.54662 9.3001Z"
+                  fill="#FF7A00"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="nav__modal-list">
+            <div class="nav__modal-card">
+              <div class="logo"><img src="../assets/modal1.png" /></div>
+              <div class="content">
+                <button class="content__category">Обувь</button>
+                <button class="content__subcategory">Мужская</button>
+                <button class="content__subcategory">Женская</button>
+                <button class="content__subcategory">Детская</button>
+                <button class="content__subcategory">Домашняя</button>
+                <button class="content__subcategory">Терапевческая</button>
+                <button class="content__subcategory">
+                  Индивидуальная (сложная)
+                </button>
+              </div>
+            </div>
+
+            <div class="nav__modal-card">
+              <div class="logo"><img src="../assets/modal2.png" /></div>
+              <div class="content">
+                <button class="content__category">Изделия для стопы</button>
+                <button class="content__subcategory">Гид по стелькам</button>
+                <button class="content__subcategory">
+                  Индивидуальные стельки
+                </button>
+                <button class="content__subcategory">Стельки</button>
+                <button class="content__subcategory">Подпяточники</button>
+                <button class="content__subcategory">Корректоры</button>
+              </div>
+            </div>
+
+            <div class="nav__modal-card">
+              <div class="logo"><img src="../assets/modal3.png" /></div>
+              <div class="content">
+                <button class="content__category">Средства реабилитации</button>
+                <button class="content__subcategory">Ходунки</button>
+                <button class="content__subcategory">Костыли</button>
+                <button class="content__subcategory">Трости для ходьбы</button>
+                <button class="content__subcategory">
+                  Противопролежневые системы
+                </button>
+                <button class="content__subcategory">
+                  Товары после мастэктомии
+                </button>
+                <button class="content__subcategory">
+                  Послеоперационное белье
+                </button>
+                <button class="content__subcategory">
+                  Скандинавская ходьба
+                </button>
+              </div>
+            </div>
+
+            <div class="nav__modal-card">
+              <div class="logo"><img src="../assets/modal4.png" /></div>
+              <div class="content">
+                <button class="content__category">
+                  Средства гигены и индивидуальной защиты
+                </button>
+                <button class="content__subcategory">Уходовая косметика</button>
+                <button class="content__subcategory">Лечебная косметика</button>
+                <button class="content__subcategory">
+                  Перевязочные материалы
+                </button>
+                <button class="content__subcategory">Дезинфекция</button>
+                <button class="content__subcategory">COVID-19</button>
+                <button class="content__subcategory">БАДы</button>
+              </div>
+            </div>
+
+            <div class="nav__modal-card">
+              <div class="logo"><img src="../assets/modal5.png" /></div>
+              <div class="content">
+                <button class="content__category">Изделия для спорта</button>
+                <button class="content__subcategory">Бандажи</button>
+                <button class="content__subcategory">Манжеты и гетры</button>
+                <button class="content__subcategory">Носки и гольфы</button>
+                <button class="content__subcategory">Рукава</button>
+                <button class="content__subcategory">Тейпы</button>
+              </div>
+            </div>
+
+            <div class="nav__modal-card">
+              <div class="logo"><img src="../assets/modal6.png" /></div>
+              <div class="content">
+                <button class="content__category">
+                  Ортопедические подушки и матрасы
+                </button>
+                <button class="content__subcategory">Подушки</button>
+                <button class="content__subcategory">Матрасы</button>
+                <button class="content__subcategory">Наволочки</button>
+              </div>
+            </div>
+
+            <div class="nav__modal-card">
+              <div class="logo"><img src="../assets/modal7.png" /></div>
+              <div class="content">
+                <button class="content__category">Домашняя физиотерапия</button>
+                <button class="content__subcategory">Медтехника</button>
+                <button class="content__subcategory">Массажеры</button>
+                <button class="content__subcategory">Массажные кресла</button>
+              </div>
+            </div>
+
+            <div class="nav__modal-card">
+              <div class="logo"><img src="../assets/modal8.png" /></div>
+              <div class="content">
+                <button class="content__category">Термобелье</button>
+                <button class="content__subcategory">Водолазки</button>
+                <button class="content__subcategory">Кальсоны</button>
+                <button class="content__subcategory">Комплекты</button>
+                <button class="content__subcategory">Леггинсы</button>
+                <button class="content__subcategory">Носки</button>
+                <button class="content__subcategory">Футболки</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mainImage products">Наши товары</section>
+
+      <section class="products padding-y">
+        <div class="container">
+          <div class="products__list">
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product1.png" />
+              </div>
+              <div class="products__description">
+                Чулки компрессионные medi Duomed 2 класс, открытый носок DO261
+              </div>
+              <div class="products__price">5 000 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+              <div class="products__new">new</div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product2.png" />
+              </div>
+              <div class="products__description">
+                Сандали ортопедические Мега Ортопедик для мальчиков 310 03 28-34
+                синие
+              </div>
+              <div class="products__priceWrapper">
+                <span class="products__lineThrough">
+                  <span class="products__oldPrice">6 200 сом</span>
+                </span>
+                <div class="products__price">4 200 сом</div>
+              </div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+              <div class="products__discount">Акция</div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="products__card">
+              <div class="products__imgWrapper">
+                <img src="../assets/product3.png" />
+              </div>
+              <div class="products__description">
+                Стельки ортопедические Orto Mix
+              </div>
+              <div class="products__price">2 200 сом</div>
+              <div class="justify-center">
+                <button class="products__btn">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pagination">
+        <button class="pagination__active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>...</button>
+        <button>10</button>
+        <button>...</button>
+        <button>20</button>
+        <button>...</button>
+        <button>30</button>
+        <button>...</button>
+        <button>40</button>
+        <button>...</button>
+        <button>50</button>
+        <button>Показать все</button>
+      </section>
+
+      <section class="contacts mb-100">
+        <div class="container">
+          <div class="contacts__inner">
+            <div class="contacts__left">
+              <div class="contacts__title">
+                НЕ НАШЛИ ТОВАР КОТОРЫЙ ВЫ ИСКАЛИ?
+              </div>
+              <div class="contacts__subtitle">
+                Оставьте ваши контакты и наш менеджер перезвонит вам
+              </div>
+            </div>
+            <div class="contacts__right">
+              <form>
+                <input type="text" placeholder="Введите ваше имя" />
+                <input
+                  type="tel"
+                  class="contacts__right-number"
+                  placeholder="Введите ваш номер"
+                />
+                <button class="contacts__btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__col logo">
+              <img src="../assets/photo_2021-11-05_22-17-32 1.png" />
+            </div>
+            <div class="footer__col">
+              <div class="footer__title">Контакты:</div>
+              <div class="footer__item">
+                <div class="footer__icon">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.1976 6.56385C8.58536 6.56385 7.98422 6.4681 7.41456 6.27984C7.13542 6.18464 6.79227 6.27198 6.6219 6.44695L5.4975 7.29576C4.19352 6.59969 3.39029 5.79672 2.70372 4.50253L3.52755 3.40742C3.74159 3.19367 3.81836 2.88143 3.72638 2.58846C3.53732 2.01581 3.44128 1.41495 3.44128 0.802448C3.4413 0.359974 3.08133 0 2.63888 0H0.802422C0.359974 0 0 0.359974 0 0.802422C0 5.87404 4.12599 10 9.1976 10C9.64005 10 10 9.64003 10 9.19758V7.36625C10 6.92383 9.64003 6.56385 9.1976 6.56385Z"
+                      fill="#FF7A00"
+                    />
+                  </svg>
+                </div>
+                <div class="footer__text">0 999 999 999</div>
+              </div>
+
+              <div class="footer__item">
+                <div class="footer__icon">
+                  <svg
+                    width="10"
+                    height="11"
+                    viewBox="0 0 10 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.52229 1.45358C7.58198 0.516778 6.33108 0.000534573 4.99977 0C3.67144 0 2.41855 0.515785 1.47206 1.45235C0.52388 2.39053 0.00122188 3.6373 0 4.95846V4.95998V4.9609C0.000152735 5.76054 0.210239 6.56721 0.60903 7.30354L0.0136698 10.0096L2.75091 9.387C3.44417 9.73638 4.21769 9.92058 4.99786 9.92088H4.99985C6.32795 9.92088 7.58083 9.40502 8.52748 8.46838C9.4765 7.52944 9.99939 6.28427 10 4.96227C10.0004 3.6496 9.47566 2.40351 8.52229 1.45358ZM4.99977 9.13965H4.99801C4.2975 9.13934 3.60339 8.96347 2.99085 8.63089L2.86141 8.56063L1.04127 8.97462L1.43662 7.17784L1.36041 7.04642C0.981473 6.39294 0.781238 5.67157 0.781238 4.96006C0.782689 2.65705 2.67492 0.781238 4.99962 0.781238C6.12268 0.781696 7.17792 1.21707 7.97092 2.00701C8.77591 2.80917 9.21907 3.85861 9.21869 4.96205C9.21777 7.26559 7.32516 9.13965 4.99977 9.13965Z"
+                      fill="#FF7A00"
+                    />
+                    <path
+                      d="M3.63929 2.77344H3.42011C3.34382 2.77344 3.21995 2.802 3.11518 2.91602C3.01032 3.03011 2.71486 3.30587 2.71486 3.86671C2.71486 4.42755 3.12472 4.96946 3.18185 5.0456C3.23904 5.12166 3.97301 6.30932 5.13548 6.76623C6.1016 7.14593 6.29824 7.0704 6.50787 7.05138C6.71758 7.03244 7.18456 6.7757 7.27987 6.50956C7.37518 6.24342 7.37518 6.01523 7.34662 5.96758C7.31798 5.92008 7.24169 5.89159 7.12737 5.83462C7.01297 5.77758 6.45243 5.49716 6.34758 5.45905C6.24273 5.42109 6.16651 5.40208 6.09022 5.51625C6.01393 5.63019 5.78933 5.89381 5.72259 5.96987C5.65592 6.04601 5.58917 6.05555 5.47478 5.99851C5.36038 5.94131 4.9958 5.81881 4.5589 5.43056C4.21884 5.12838 3.98286 4.74303 3.91612 4.62894C3.84945 4.51492 3.90902 4.45321 3.96637 4.39632C4.01776 4.34531 4.08718 4.27551 4.14438 4.20899C4.2015 4.1424 4.21777 4.0949 4.25595 4.01884C4.29406 3.94277 4.27497 3.87618 4.24641 3.81921C4.21777 3.76217 3.99829 3.1985 3.89657 2.97306H3.89664C3.81096 2.78321 3.72077 2.7768 3.63929 2.77344Z"
+                      fill="#FF7A00"
+                    />
+                  </svg>
+                </div>
+                <div class="footer__text">0 777 777 777</div>
+              </div>
+            </div>
+
+            <div class="footer__col">
+              <div class="footer__title">Соц. сети:</div>
+              <div class="footer__item">
+                <div class="footer__icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="16" height="16" fill="#FF7A00" />
+                    <path
+                      d="M10.5579 16V10.1694H12.4523L12.7361 7.88724H10.5579V6.43374C10.5579 5.77451 10.7343 5.32533 11.6453 5.32533H12.8V3.28967C12.5991 3.26195 11.9099 3.19995 11.1079 3.19995C9.43337 3.19995 8.28736 4.26005 8.28736 6.20771V7.88724H6.4V10.1694H8.28736V16H10.5579Z"
+                      fill="#E7E7E7"
+                    />
+                  </svg>
+                </div>
+                <div class="footer__text">orto_kg</div>
+              </div>
+
+              <div class="footer__item">
+                <div class="footer__icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="16" height="16" fill="#FF7A00" />
+                    <path
+                      d="M8.00207 5.12427C6.41397 5.12427 5.12828 6.41136 5.12828 7.99806C5.12828 9.58616 6.41537 10.8719 8.00207 10.8719C9.59017 10.8719 10.8759 9.58476 10.8759 7.99806C10.8759 6.40996 9.58877 5.12427 8.00207 5.12427ZM8.00207 9.86337C6.97118 9.86337 6.13677 9.02848 6.13677 7.99806C6.13677 6.96764 6.97165 6.13276 8.00207 6.13276C9.03249 6.13276 9.86738 6.96764 9.86738 7.99806C9.86784 9.02848 9.03296 9.86337 8.00207 9.86337Z"
+                      fill="#E7E7E7"
+                    />
+                    <path
+                      d="M10.3093 2.43508C9.27892 2.38702 6.72666 2.38935 5.69531 2.43508C4.78902 2.47755 3.98961 2.69642 3.34513 3.3409C2.26804 4.41799 2.40571 5.86935 2.40571 7.99787C2.40571 10.1763 2.28437 11.5941 3.34513 12.6548C4.42642 13.7357 5.89878 13.5942 8.00209 13.5942C10.16 13.5942 10.9048 13.5956 11.6678 13.3002C12.7053 12.8975 13.4883 11.9702 13.5649 10.3046C13.6134 9.27376 13.6106 6.72197 13.5649 5.69062C13.4725 3.72451 12.4173 2.53215 10.3093 2.43508ZM11.9404 11.9422C11.2343 12.6483 10.2547 12.5853 7.98856 12.5853C5.65517 12.5853 4.71949 12.6198 4.03674 11.9352C3.25039 11.1526 3.39273 9.89584 3.39273 7.9904C3.39273 5.41201 3.12812 3.55511 5.71584 3.42257C6.31039 3.40157 6.48539 3.39457 7.98202 3.39457L8.00302 3.40857C10.4899 3.40857 12.4411 3.14816 12.5582 5.73542C12.5849 6.32576 12.5909 6.5031 12.5909 7.9974C12.5905 10.3037 12.6343 11.245 11.9404 11.9422Z"
+                      fill="#E7E7E7"
+                    />
+                    <path
+                      d="M10.9897 5.68245C11.3606 5.68245 11.6613 5.38179 11.6613 5.0109C11.6613 4.64002 11.3606 4.33936 10.9897 4.33936C10.6188 4.33936 10.3182 4.64002 10.3182 5.0109C10.3182 5.38179 10.6188 5.68245 10.9897 5.68245Z"
+                      fill="#E7E7E7"
+                    />
+                  </svg>
+                </div>
+                <div class="footer__text">orto_kg</div>
+              </div>
+            </div>
+
+            <div class="footer__col">
+              <div class="footer__title">Адрес:</div>
+              <div class="footer__item">
+                <div class="footer__icon">
+                  <svg
+                    width="9"
+                    height="12"
+                    viewBox="0 0 9 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.34595 0C1.94958 0 0 1.94958 0 4.34593C0 7.31987 3.8892 11.6858 4.05479 11.8702C4.21032 12.0434 4.48186 12.0431 4.63711 11.8702C4.8027 11.6858 8.6919 7.31987 8.6919 4.34593C8.69185 1.94958 6.7423 0 4.34595 0ZM4.34595 6.53248C3.14028 6.53248 2.15942 5.5516 2.15942 4.34593C2.15942 3.14025 3.1403 2.15939 4.34595 2.15939C5.5516 2.15939 6.53246 3.14028 6.53246 4.34595C6.53246 5.55162 5.5516 6.53248 4.34595 6.53248Z"
+                      fill="#FF7A00"
+                    />
+                  </svg>
+                </div>
+                <div class="footer__text">Бишкек, улица 7 Апреля, 2</div>
+              </div>
+              <div class="footer__item"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+
+    <script src="../js/slick.js"></script>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+/* Header */
+
+.header {
+    padding: 35px 0;
+    background: #FF7A00;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 180px;
+    height: 45px;
+}
+
+.header__logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.header__search {
+    width: 380px;
+    height: 44px;
+}
+
+.header__search input {
+    border-radius: 22px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 28px;
+    border: 0;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+}
+
+.header__search input ::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../assets/Group 2.png') no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+}
+
+.header__info {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__location {
+    margin-right: 28px;
+}
+
+.header__time {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.header__contacts {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000;
+    margin-top: 4px;
+}
+
+.header__branch {
+    display: none;
+}
+
+.header__branch.open {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    background: #fff;
+    padding: 13px 56px 13px 13px;
+    display: flex;
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    z-index: 999;
+}
+
+.header__branch-item {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.header__branch-item+.header__branch-item {
+    margin-top: 10px;
+}
+
+.header__burger, .header__phoneNumbers, .header__searchIcon {
+    display: none;
+}
+
+.header__modal {
+    display: none;
+}
+
+/* Media query */
+
+@media (max-width: 1260px) {
+    .header__logo {
+        margin-right: 10px;
+    }
+    .header__info {
+        margin-left: 10px;
+    }
+    .header__location {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header__contacts {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .header__time {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .header__search {
+        width: 300px;
+        height: 35px;
+    }
+    .header__search input {
+        padding: 8px 15px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header__search {
+        width: 200px;
+        height: 35px;
+    }
+    .header__logo {
+        width: 140px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        position: relative;
+    }
+    .header__time {
+        display: none;
+    }
+    .header__search {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+    .header__burger-line {
+        width: 30px;
+        height: 5px;
+        background: #fff;
+        display: block;
+    }
+    .header__burger-line+.header__burger-line {
+        margin-top: 5px;
+    }
+    .header__time-wrapper {
+        display: none;
+    }
+    .header__phoneNumbers {
+        display: block;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        margin-right: 10px;
+    }
+    .header__searchIcon {
+        display: block;
+    }
+    .header__branch.open {
+        padding: 10px;
+        z-index: 1001;
+    }
+    .header__branch-item {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    /* header__modal */
+    .header__modal {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        z-index: 1000;
+        display: block;
+        background: #F0F0F0;
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+        padding: 20px 0;
+        transition: .2s linear all;
+    }
+    .header__modal-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #C4C4C4;
+        padding: 0 30px 15px;
+    }
+    .header__modal-left {
+        display: flex;
+        align-items: center;
+    }
+    .header__modal-burger {
+        display: block;
+        margin-right: 30px;
+    }
+    .header__modal-burger span {
+        width: 30px;
+        height: 4px;
+        display: block;
+        background: #FF7A00;
+        margin: 4px 0;
+    }
+    .header__modal-logo {
+        width: 100px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__modal-logo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .header__modal-content {
+        margin: 0 20px;
+    }
+    .header__modal-item {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        text-transform: uppercase;
+        border-bottom: 1px solid #C4C4C4;
+    }
+    .header__modal-itemWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__modal-plus {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .header__modal-title {
+        cursor: pointer;
+    }
+    .header__modal-title:hover {
+        color: #FF7A00;
+    }
+    .header__modal-extras {
+        display: none;
+    }
+    .header__modal-extras.open {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 10px;
+        margin-top: 15px;
+    }
+    .header__modal-extra {
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+        text-transform: capitalize;
+        font-weight: normal;
+    }
+    .header__modal-minus {
+        display: none;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__logo {
+        width: 90px;
+        height: 25px;
+    }
+    .header__phoneNumbers {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
